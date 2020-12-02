@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+	height: 100vh;
+	margin: 0;
+	font-family: 'Poppins', arial;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {width: 80%;}
+
+/*---------HOME PAGE---------*/
+header, .nav-container a{
+	color: white;
+	display: flex;
+	background: black;
+}
+
+header .logo {
+	font-size: 1em;
+	font-weight:bold;
+}
+
+header a{
+	display: block;
+	padding: 1em;
+}
+
+header ul, header input {
+	display: none;
+}
+
+header label {
+	display: block;
+	font-size: 35px;
+	color: white;
+	position: absolute;
+	right: 20px;
+	width: 36px;
+	padding: 0;
+	cursor: pointer;
+}
+
+label:hover, a:hover {color: #B45F04;}
+
+.welcome {
+	display: grid;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+@media only screen and (min-width: 950px) {
+	header{
+		display: flex;
+		justify-content: space-between;
+		font-size: 15px;
+		padding: 1em;
+	}
+
+	header label{
+		display: none;
+	}
+
+	.main-menu {
+		padding: 0;
+		display: flex;
+	}
+}
+
+/*---------ABOUT US PAGE---------*/
+.about-us {
+	display: grid;
+	text-align: center;
+	position: relative;
+	font-size: 1.5em;
+}
+
+.about-us::before {
+	content: "";
+	position: absolute;
+	width: 200px
+	height: 200px;
+	border-radius: 50%;
+	background: white;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.description {
+	font-size: .8em;
+}
+
+/*---------MENU PAGE---------*/
+.chef {
+	background: #424242;
+	margin-top: 5em;
+	padding: 2em 5em 0em 3em;
+}
+
+.chef-container ul li {
+	background: white;
+	padding: 2em;
+	border-radius: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.menu-btn {
+	cursor: pointer;
+}
+
+.icon-container {
+	height: 100px;
+	display: grid;
+	place-content: center;
+	margin: 0 auto;
+
+}
+
+.title {
+	font-weight: bold;
+}
+
+.checked {
+  color: orange;
+}
+
+.menu {
+	padding: 2em 5em 0em 3em;
+	background: black;
+	color: white;
+}
+
+.close-btn {
+	width: 18px;
+	float: right;
+}
+
+.transition1 {
+  	display: flex;
+  	align-items:center;
+}
+
+.transition1:hover img{
+	border-radius:0;
+}
+
+.transition1 img{
+  	max-width:150px;
+  	margin-right: 2em;
+  	border-radius: 6em;
+  	margin-bottom: 1em;
+  	transition:.5s;
+}
+
+.transition1 h5 {
+	border-bottom: 1px dashed #333;
+	margin-bottom: 5px;
+	padding-bottom:5px;
+}
+
+.transition1 h5 span{
+  	float:right;
+  	color:#ff7720;
+  	font-style:italic;
+}
+
+.transition1 p{
+	font-size: 0.8em;
+}
+
+
+@media only screen and (min-width: 800px) {
+	.chef {
+		margin-top: 5em;
+		margin-bottom: -4em;
+		padding: 6em 5em 0em 5em;
+	}
+
+	.chef-container ul{
+		display:grid;
+		grid-template-columns: repeat(2, auto);
+		grid-gap: 5em;
+	}
+
+	.menu {
+		padding: 6em 5em 0em 5em;
+	}
+
+	.starter ul {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-gap: 2em;
+	}
+
+	.starter ul li{
+		flex-wrap: wrap;
+	}
+
+	.special ul {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		grid-gap: 2em;
+	}
+
+	.menu {
+		height: 100%; 
+	}
+
+	.special ul li{ 
+		flex-wrap: wrap;
+	}
+}
+
+@media only screen and (min-width: 1450px) {
+	.chef{
+		padding: 6em 15em 0em 15em;
+	}
+
+	.menu {
+		padding: 6em 15em 0em 15em;
+	}
+}
