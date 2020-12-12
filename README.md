@@ -19,3 +19,7 @@ $ cd Array_pasta2
 $ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000/`.
+
+
+
+#On the master branch project Array_Pasta has a working discussion form
