@@ -1,0 +1,26 @@
+{% extends "forum/base.html" %}
+
+{% block content %}
+<h2>DISCUSSION FORUM</h2>
+<br>
+  {% for post in posts %}
+<div class="row">
+  <div class="container">
+    <div class = "card mb-3">
+      <article class="media-body">
+        <div class="media-body">
+          <div class="card-header" style="text-align:left; background:#fff;">
+            <a class="mr-2" href="#" style="color:#000;font-weight:bold;"> {{ post.author }} </a>
+            <small class="text-muted"> {{ post.date_posted|date:"F d, Y" }} </small>
+          </div>
+          <div class="card-body">
+            <h5> <a class="article-title" href="{% url 'post-detail' post.id %}"> {{ post.title }} </a></h5>
+            <p class="article-content"> {{ post.context }}</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+  {% endfor %}
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% extends 'forum/base.html' %}
+{% load static %}
+{% block content %}
+
+	<h2 class="title"> Menu </h2>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-u8">
+				<div class="row">
+					{% for item in items %}
+					<div class="col-md-6 p-4">
+						<img class="picture" src="{{ item.food_img }}">
+						<style>
+							.picture {
+								width: 300px;
+								border-radius: 30%;
+								height: 250px;
+								}
+						</style>
+						<h4 class="pt-3" id="it{{item.id}}"> {{ item.name }} - ${{item.price }} </h4>
+						<button class="btn" onclick="addItem1('{{item.id}}')">Add to Cart</button>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>Order list</h2>
+				<ul id="pcart"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'forum/js/orders.js' %}"></script>
+
+{% endblock content %}

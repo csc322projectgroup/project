@@ -1,0 +1,135 @@
+{% extends "forum/base.html" %}
+
+{% block content %}
+    <main>
+      <!-- image slider -->
+    <div id="slide" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#slide" data-slide-to="0" class="active"></li>
+        <li data-target="#slide" data-slide-to="1"></li>
+        <li data-target="#slide" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/forum/images/slider_image_1.jpg">
+          <div class="carousel-caption">
+              <h1 class="carousel-title"> Array Pasta <h1>
+              <a class="carousel-button btn btn-dark btn-lg" href="{% url 'login' %}"> SIGN IN </a>
+              <a class="carousel-button btn btn-dark btn-lg" href="{% url 'register' %}"> SIGN UP </a>
+              <a class="carousel-button btn btn-dark btn-lg" href="#"> MENU </a>  <!-- needs a link -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/forum/images/slider_image_2.jpg">
+          <div class="carousel-caption">
+              <h1 class="carousel-title"> Array Pasta<h1>
+              <a class="carousel-button btn btn-dark btn-lg" href="{% url 'login' %}"> SIGN IN </a>
+              <a class="carousel-button btn btn-dark btn-lg" href="{% url 'register' %}"> SIGN UP </a>
+              <a class="carousel-button btn btn-dark btn-lg" href="#"> MENU </a>  <!-- needs a link -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/forum/images/slider_image_3.jpg">
+          <div class="carousel-caption">
+              <h1 class="carousel-title"> Array Pasta<h1>
+              <a class="carousel-button btn btn-dark btn-lg" href="{% url 'login' %}"> SIGN IN </a>
+              <a class="carousel-button btn btn-dark btn-lg" href="{% url 'register' %}"> SIGN UP </a>
+              <a class="carousel-button btn btn-dark btn-lg" href="#"> MENU </a>  <!-- needs a link -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="container-fluid">
+    <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead"> Making traditional italian food since the 1980's. Come try our chefs specilities on
+        their own curated menus. </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <a href="Menu.html"><button type="button" class="btn btn-outline-secondary btn-lg"> Menu </button></a>
+      </div>
+    </div>
+    </div>
+
+    <!-- fixed background -->
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed">
+        </div>
+      </div>
+    </figure>
+
+    <!-- chefs title -->
+    <div class="container-fluid-padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4"> Meet the chefs </h1>
+      </div>
+      <hr>
+    </div>
+    </div>
+
+    <!-- chefs cards -->
+    <div class="container-fluid padding">
+    <div class="row padding">
+      <!-- card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="static/forum/images/chefs_1.jpg">
+          <div class="card-body">
+            <h4 class="card-title"> Gordon Ramsey </h4>
+            <p class="card-text"> With more than 20 years of experience and studying under some of the most
+              famous chefs in Italy. </p>
+              <a href="chefs_menu_1.html" clas="btn btn-outline-secondary"> See menu </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="static/forum/images/chefs_2.jpg">
+          <div class="card-body">
+            <h4 class="card-title"> Jamie Oliver </h4>
+            <p class="card-text">  Being taught by one of the most talented chefs to ever cook Italian food Gennaro Contaldo.
+            It's safe to say that Jamie Oliver Know a thing or two about Italian cuisine </p>
+              <a href="chefs_menu_2.html" clas="btn btn-outline-secondary"> See menu </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="static/forum/images/chefs_3.jpg">
+          <div class="card-body">
+            <h4 class="card-title"> Gordon Ramsey </h4>
+            <p class="card-text"> With more than 20 years of experience and studying under some of the most
+              famous chefs in Italy. </p>
+              <a href="chefs_menu_3.html" clas="btn btn-outline-secondary"> See menu </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    </div>
+
+    <!-- connect -->
+    <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h1> Connect </h1>
+      </div>
+      <div class="col-12 social padding">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+    </div>
+    </main>
+{% endblock content %}

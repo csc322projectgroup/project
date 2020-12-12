@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/*---------BASE PAGE---------*/
+.navbar{
+  background: #fff!important;
+  width: 100%;
+}
+
+.navbar-brand{ font-weight: bold; }
+
+.nav-link{ color: #000!important; }
+
+.nav-link:hover { color: #B45F04!important; }
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*----------FOOTER----------*/
+.footer-top {
+  padding: 60px 0; 
+  background: #FAFAFA!important;
+  text-align: left;
+}
+.footer-top h3, .foot-top h4 {
+  padding-bottom: 10px;
+  color: #585858;
+  font-weight: bold;
+}
+
+.footer-top p, .footer-contact p { word-break: break-word; }
+.footer-contact i { 
+  padding-right: 10px;
+  font-size: 18px;
+  color: #585858;
+ }
+
+ .footer-contact p a { 
+  color: #aaa; 
+  border-bottom: 1px dashed #666; 
+ }
+
+.footer-social a { 
+  display: inline-block; 
+  margin-right: 10px; 
+  margin-bottom: 8px; 
+  color: #777; 
+  border: 0; 
+}
+
+.footer-social i { 
+  font-size: 24px; 
+  vertical-align: middle; 
+}
+
+.fa-facebook-square { color: #3B5998; }
+.fa-twitter-square { color: #00ACEE; }
+.fa-google-plus-square { color: #DB4A39; }
+.fa-pinterest-square { color: #E60023;}
+.fa-youtube-square { color: #FF0000; }
+
+/*----------------------------------*/
+
+.carousel-title {
+  font-family: cursive;
+  font-size: 100px;
+  margin-top: -120px;
+  color: white;
+}
+
+.carousel-button {
+  margin-top: 330px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 640px !important;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+}
+
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+
+.btn-primary:hover {
+  background-color: #536d7c;
+  border: 1px solid #563d7c;
+}
+
+.Jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.card img {
+  height: 300px;
+}
+
+.social a {
+  padding: 40px;
+  font-size: 60px;
+  width: 50px;
+  height: 96px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-facebook: hover,
+.fa-twitter: hover,
+.fa-gppgle-plus-g: hover,
+.fa-instagram: hover,
+.fa-youtube: hover {
+  color: #d5d5d5;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+  }
+@media (max-width: 768px) {
+.carousel-caption {
+    top: 45%;
+}
+.carousel-caption .btn {
+  font-size: 95%;
+  padding: 8px 14px;
+}
+}
+@media (max-width: 576px) {
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+/*
+
+
+
+this is a break for about_us.html if needed to make a seperate css file and its own directory
+
+
+
+
+
+*/
+
+.banner {
+  height: 800px;
+  width: 100%;
+  max-height: 50%;
+  max-width: 100%;
+  min-height: 20%;
+  min-width: 30%;
+  background-image: url("/Users/anthonycampana/Documents/templates /array_pasta/css/images/array_pasta_inside.jpg");
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+}
