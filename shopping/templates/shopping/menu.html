@@ -1,0 +1,47 @@
+{% extends 'forum/base.html' %}
+{% load static %}
+
+{% block content %}
+    <head>
+        <style>
+            .picture {
+                width: 300px;
+                border-radius: 30%;
+                height: 250px;
+            }
+        </style>
+    </head>
+
+    <h2> Items </h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    {% for item in items %}
+                    <div class="col-md-6">
+                        <img class="picture" src={{ item.fPic}}>
+                        <h2> Item: {{ item.name }}<h2>
+                        <h2> Price ${{item.price}}<h2>
+                        <div>
+                            <button class="btn">Add to cart</button>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Order: </h2>
+
+                <h2> Price: $</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    {%for item in items%}
+
+    {%endfor%}
+{% endblock content %}

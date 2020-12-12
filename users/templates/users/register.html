@@ -1,0 +1,28 @@
+{% extends "forum/base.html" %}
+
+{% block content %}
+
+<div class="container d-flex justify-content-center">
+    <div class="card mx-5 my-5" style="width: 450px; height: auto; border: none;">
+        <div class="card-body px-2">
+        <form method="POST">
+          {% csrf_token %}
+          <fieldset class="form-group">
+            <legend class="border-bottom mb-4"> Join Today</legend>
+            {{ form.as_p }}
+          </fieldset>
+          <div class="form-group">
+            <button class="btn btn-outline-info" type="submit"> Sign Up </button>
+          </div>
+        </form>
+        <div class="border-top pat-3">
+          <small class="text-muted">
+          Already have an account? <a href="{% url 'login' %}" class="ml-2"> Sign In </a>
+          </small>
+        </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">  span{display: block; font-size: 9pt;} li {display: block;font-size: 9pt} </style>
+{% endblock content %}
